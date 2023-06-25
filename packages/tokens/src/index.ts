@@ -1,5 +1,9 @@
 export * from './colors';
 
-/* Quando for utilizar */
-// import { colors } from '@ignite-ui/tokens/colors' -- Ao invez de se utilizar assim 
-// import { colors } from '@ignite-ui/tokens' -- Podera se utilizar assim
+export * from './space';
+export * from './colors';
+
+export * from './fonts';
+export * from './font-sizes';
+export * from './font-weights';
+export * from './line-heights';
