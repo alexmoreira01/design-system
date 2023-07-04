@@ -68,4 +68,13 @@ declare const lineHeights: {
     readonly tall: "180%";
 };
 
-export { colors, fontSizes, fontWeights, fonts, lineHeights, space };
+declare const radii: {
+    readonly px: "1px";
+    readonly xs: "4px";
+    readonly sm: "6px";
+    readonly md: "8px";
+    readonly lg: "16px";
+    readonly full: "99999px";
+};
+
+export { colors, fontSizes, fontWeights, fonts, lineHeights, radii, space };

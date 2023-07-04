@@ -74,11 +74,22 @@ var lineHeights = {
   base: "160%",
   tall: "180%"
 };
+
+// src/radii.ts
+var radii = {
+  px: "1px",
+  xs: "4px",
+  sm: "6px",
+  md: "8px",
+  lg: "16px",
+  full: "99999px"
+};
 export {
   colors,
   fontSizes,
   fontWeights,
   fonts,
   lineHeights,
+  radii,
   space
 };

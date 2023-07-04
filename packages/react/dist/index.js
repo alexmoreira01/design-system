@@ -41,16 +41,6 @@ __export(src_exports, {
 });
 module.exports = __toCommonJS(src_exports);
 
-// ../tokens/src/radii.ts
-var radii = {
-  px: "1px",
-  xs: "4px",
-  sm: "6px",
-  md: "8px",
-  lg: "16px",
-  full: "99999px"
-};
-
 // ../tokens/dist/index.mjs
 var colors = {
   white: "#FFF",
@@ -116,6 +106,14 @@ var lineHeights = {
   short: "140%",
   base: "160%",
   tall: "180%"
+};
+var radii = {
+  px: "1px",
+  xs: "4px",
+  sm: "6px",
+  md: "8px",
+  lg: "16px",
+  full: "99999px"
 };
 
 // src/styles/index.ts

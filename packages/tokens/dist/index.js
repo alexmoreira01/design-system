@@ -25,6 +25,7 @@ __export(src_exports, {
   fontWeights: () => fontWeights,
   fonts: () => fonts,
   lineHeights: () => lineHeights,
+  radii: () => radii,
   space: () => space
 });
 module.exports = __toCommonJS(src_exports);
@@ -105,6 +106,16 @@ var lineHeights = {
   base: "160%",
   tall: "180%"
 };
+
+// src/radii.ts
+var radii = {
+  px: "1px",
+  xs: "4px",
+  sm: "6px",
+  md: "8px",
+  lg: "16px",
+  full: "99999px"
+};
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   colors,
@@ -112,5 +123,6 @@ var lineHeights = {
   fontWeights,
   fonts,
   lineHeights,
+  radii,
   space
 });
