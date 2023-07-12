@@ -3427,9 +3427,47 @@ var Button = styled("button", {
 });
 
 // src/components/TextInput/styles.ts
-var TextInputContainer = styled("div", {});
-var Prefix = styled("span", {});
-var Input = styled("input", {});
+var TextInputContainer = styled("div", {
+  background: "$gray900",
+  padding: "$3 $4",
+  borderRadius: "$sm",
+  boxSizing: "border-box",
+  border: "2px solid $gray900",
+  display: "flex",
+  alignItems: "baseline",
+  // Aplicar estilização de no elemento pai de acordo com estado do filho
+  "&:has(input:focus)": {
+    borderColor: "$ignite300"
+  },
+  "&:has(input:disabled)": {
+    opacity: 0.5,
+    cursor: "not-allowed"
+  }
+});
+var Prefix = styled("span", {
+  fontFamily: "$default",
+  fontSize: "$sm",
+  color: "$gray400",
+  fontWeight: "$regular"
+});
+var Input = styled("input", {
+  fontFamily: "$default",
+  fontSize: "$sm",
+  color: "$white",
+  fontWeight: "$regular",
+  background: "transparent",
+  border: 0,
+  width: "100%",
+  "&:focus": {
+    outline: 0
+  },
+  "&:disabled": {
+    cursor: "not-allowed"
+  },
+  "&:placeholder": {
+    color: "$gray400"
+  }
+});
 
 // src/components/TextInput/index.tsx
 var import_jsx_runtime2 = __toESM(require_jsx_runtime());
@@ -3440,12 +3478,39 @@ function TextInput(_a) {
     /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Input, __spreadValues({}, props))
   ] });
 }
+
+// src/components/TextArea.tsx
+var TextArea = styled("textarea", {
+  background: "$gray900",
+  padding: "$3 $4",
+  borderRadius: "$sm",
+  boxSizing: "border-box",
+  border: "2px solid $gray900",
+  fontFamily: "$default",
+  fontSize: "$sm",
+  color: "$white",
+  fontWeight: "$regular",
+  resize: "vertical",
+  minHeight: 80,
+  "&:focus": {
+    outline: 0,
+    borderColor: "$ignite300"
+  },
+  "&:disabled": {
+    opacity: 0.5,
+    cursor: "not-allowed"
+  },
+  "&:placeholder": {
+    color: "$gray400"
+  }
+});
 export {
   Avatar2 as Avatar,
   Box,
   Button,
   Heading,
   Text,
+  TextArea,
   TextInput
 };
 /*! Bundled license information:

@@ -3,3 +3,5 @@ dist
 .turbo
 package-lock.json
 storybook-static
+react/dist
+packages/react/dist/
