@@ -13,7 +13,7 @@ export function Tooltip({ children, content, ...props }: TooltipProps) {
         <TooltipPrimitive.Trigger asChild>{children}</TooltipPrimitive.Trigger>
         <TooltipPrimitive.Portal>
           <TooltipContent>
-            <TooltipPrimitive.TooltipArrow />
+            <TooltipArrow />
 
             {content}
           </TooltipContent>

@@ -1,5 +1,11 @@
 # @alex-ignite-ui/react
 
+## 3.1.1
+
+### Patch Changes
+
+- Fix TooltioArrow
+
 ## 3.1.0
 
 ### Minor Changes
